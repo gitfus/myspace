@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>theme 35</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background-image: url('https://i.pinimg.com/originals/ee/0b/d5/ee0bd5c89941b6c095614a51f72a3ff7.gif');
+        margin: 0px;
+        color: #613f3f;
+        overflow-x: hidden;
+      }
+
+      #topborder {
+        background-image: url('https://i.imgur.com/0vWS1mg.png');
+        background-repeat: repeat-x;
+        height: 73px;
+        width: 100vw;
+        position: fixed;
+        top: 0px;
+        z-index: 3;
+      }
+
+      #bottomborder {
+        background-image: url('https://i.imgur.com/lv5pt9F.png');
+        background-repeat: repeat-x;
+        height: 73px;
+        width: 100vw;
+        position: fixed;
+        bottom: 0px;
+        z-index: 3;
+      }
+
+      #all {
+        background-color: #aaa;
+        width: 800px;
+        margin: 0 auto;
+      }
+
+      #side {
+        width: 175px;
+        margin-top: 135px;
+        float: left;
+        position: fixed;
+      }
+
+      #profile {
+        background-color: #fefefe;
+        border-radius: 10px;
+        width: 145px;
+        margin-bottom: 25px;
+        padding: 15px;
+      }
+
+      #pfp {
+        background-image: url('https://preview.redd.it/ask-me-something-ill-respond-with-a-meme-v0-vaaheetjdkmc1.png?width=235&format=png&auto=webp&s=6944cae1c996701cb5cd9fe8fe66ba9d07c79031');
+        width: 145px;
+        height: 145px;
+        border-radius: 10px;
+        opacity: 0.9;
+      }
+
+      #profiletext {
+        margin: 0px;
+        letter-spacing: 1px;
+        text-align: justify;
+        font-size: 14px;
+        padding: 15px 5px 0px 5px;
+        color: #856d6d;
+      }
+
+      #nav {
+        background-color: #fefefe;
+        width: 175px;
+        border-radius: 10px;
+        position: relative;
+      }
+
+      #navheader {
+        border-bottom: 3px solid #cdb5b5;
+        margin: 0px;
+        line-height: 10px;
+        padding-left: 5px;
+        padding-top: 15px;
+        font-family: 'Sacramento', cursive;
+        color: # #FFA1DE;
+      }
+
+      #navbow {
+        background-image: url('https://i.imgur.com/2IzDDAz.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 65px;
+        height: 41px;
+        position: absolute;
+        right: 9px;
+        top: 14px;
+        z-index: 2;
+      }
+
+      ul {
+        margin: 0px;
+        padding: 13px 10px 10px 16px;
+      }
+
+      li {
+        list-style-type: none;
+        margin: -10px;
+        letter-spacing: -1px;
+        font-size: 18px;
+      }
+
+      #main {
+        width: 605px;
+        float: right;
+        position: relative;
+      }
+
+      #title {
+        font-family: 'Sacramento', Cursive;
+        border-bottom: 3px solid #cdb5b5;
+        line-height: 15px;
+        width: 600px;
+        margin: 0px;
+        color: ## FFA1DE;
+        background-color: #fefefe;
+        position: absolute;
+        top: 74px;
+        border-radius: 10px 10px 0px 0px;
+        padding-left: 5px;
+        padding-top: 22px;
+      }
+
+      #bow {
+        background-image: url('https://i.imgur.com/GOQMFVP.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 160px;
+        height: 102px;
+        position: absolute;
+        right: 45px;
+        top: 81px;
+        z-index: 2;
+      }
+
+      #content {
+        background-color: #fefefe;
+        position: absolute;
+        top: 114px;
+        width: 575px;
+        padding: 15px 15px 73px 15px;
+      }
+
+      .entry {
+        width: 575px;
+      }
+
+      .entryhead {
+        width: 575px;
+        height: 80px;
+        position: relative;
+        border-bottom: 1px dotted #613f3f;
+        padding-bottom: 5px;
+      }
+
+      .icon {
+        width: 80px;
+        opacity: 0.9;
+      }
+
+      .date {
+        position: absolute;
+        bottom: 0;
+        left: 85px;
+        padding-bottom: 5px;
+      }
+
+      .date p {
+        margin: 0px;
+        letter-spacing: -1px;
+        color: #856d6d;
+      }
+
+      .datecolor {
+        color: #FFA1DE;
+      }
+
+      .header {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+
+      .header h2 {
+        margin: 0px;
+        font-family: 'Sacramento', cursive;
+        line-height: 23px;
+        font-size: 26px;
+        color: # #FFA1DE;
+      }
+
+      .text {
+        text-align: justify;
+        margin-top: 5px;
+        letter-spacing: 1px;
+        color: #856d6d;
+      }
+
+      a {
+        text-decoration: none;
+        color: #FFA1DE;
+        font-family: 'Sacramento', Cursive;
+      }
+
+      a:visited {
+        color: # #FFA1DE;
+      }
+
+      a:hover {
+        font-style: italic;
+      }
+
+      a:active {
+        font-style: italic;
+        font-weight: bold;
+      }
+
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background-color: #578EA3;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background-color: #cdb5b5;
+      }
+
+      #credit {
+        font-size: 12px;
+        position: fixed;
+        bottom: 70px;
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="topborder"></div>
+    <div id="bottomborder"></div>
+    <div id="all">
+      <div id="side">
+        <div id="profile">
+          <div id="pfp"></div>
+          <!-- see "#pfp" in CSS, 145x145px -->
+          <p id="profiletext">@a3f4fgf56g7j43g2r
+        </div>
+        <div id="nav">
+          <div id="navbow"></div>
+          <h2 id="navheader">About me</h2>
+          <ul> i dont know i just like playing games and creating cool tools to make life easier on me. </ul>
+        </div>
+      </div>
+      <div id="main">
+        <div id="bow"></div>
+        <h1 id="title">My Life</h1>
+        <div id="content">
+          <!-- ENTRY START -->
+          <div class="entry">
+            <div class="entryhead">
+              <div class="icon">
+                <img src="https://i.pinimg.com/236x/cb/72/c4/cb72c4b82aed85ad485a4f2f32c8d8d8.jpg" width="80px">
+              </div>
+              <div class="date">
+                <p>
+                  <span class="datecolor">
+                    <b>Date:</b>
+                  </span> 07/06/2025
+                </p>
+                <p>
+                  <span class="datecolor">
+                    <b>Mood:</b>
+                  </span> Stockpiler
+                </p>
+              </div>
+              <div class="header">
+                <h2>Chapter 1</h2>
+              </div>
+            </div>
+            <div class="text">
+              <p style="margin:0px;">today i collected four new ekittens, business is booming. soon i’ll have enough to start a guild or maybe a small cult. being a eboy is hard work but someone’s gotta do it eventually.</p>
+              <p></p>
+            </div>
+          </div>
+          <!-- ENTRY END -->
+          <!-- ENTRY START -->
+          <div class="entry">
+            <div class="entryhead">
+              <div class="icon">
+                <img src="https://f4.bcbits.com/img/a4112938373_16.jpg" width="80px">
+              </div>
+              <div class="date">
+                <p>
+                  <span class="datecolor">
+                    <b>Date:</b>
+                  </span> 07/4/2025
+                </p>
+                <p>
+                  <span class="datecolor">
+                    <b>Mood:</b>
+                  </span> Procrastinator
+                </p>
+              </div>
+              <div class="header">
+                <h2>Chapter 2</h2>
+              </div>
+            </div>
+            <div class="text">
+              <p style="margin:0px;">spent 3 hours today fixing my discord status. ended up going with “sad but sparkly.” it says a lot about me as a person. some say i’m wasting my life. i say i’m curating a vibe.</p>
+              <p></p>
+            </div>
+          </div>
+          <!-- ENTRY END -->
+          <!-- ENTRY START -->
+          <div class="entry">
+            <div class="entryhead">
+              <div class="icon">
+                <img src="https://i.imgur.com/oOPh2V0.jpg" width="80px">
+              </div>
+              <div class="date">
+                <p>
+                  <span class="datecolor">
+                    <b>Date:</b>
+                  </span> 07/1/2022
+                </p>
+                <p>
+                  <span class="datecolor">
+                    <b>Mood:</b>
+                  </span> Satisfied
+                </p>
+              </div>
+              <div class="header">
+                <h2>Chapter 3</h2>
+              </div>
+            </div>
+            <div class="text">
+              <p style="margin:0px;">tried to gaslight my way into becoming a mod today. told them i’ve basically been moderating with my vibes alone. someone brought up that time i got muted for spamming meow in vc. rude, but fair. they didn’t give me mod, but they gave me a custom role: “emotional support eboy.” honestly? kind of a win.</p>
+              <p></p>
+            </div>
+          </div>
+          <!-- ENTRY END -->
+          <!-- ENTRY START -->
+          <div class="entry">
+            <div class="entryhead">
+              <div class="icon">
+                <img src="https://i.pinimg.com/originals/bf/22/de/bf22de561f253e66bfd7b2fd9093a733.gif" width="80px">
+              </div>
+              <div class="date">
+                <p>
+                  <span class="datecolor">
+                    <b>Date:</b>
+                  </span> 06/30/2025
+                </p>
+                <p>
+                  <span class="datecolor">
+                    <b>Mood:</b>
+                  </span> Indecisive
+                </p>
+              </div>
+              <div class="header">
+                <h2>Chapter 4</h2>
+              </div>
+            </div>
+            <div class="text">
+              <p style="margin:0px;">spent 40 minutes today trying to pick a new pfp. went through 12 anime boys, 3 blurry mirror selfies, and one cursed frog image. ended up choosing a pic that is literally the basic discord pfp. people said it was “on brand.” they’re not wrong.</p>
+              <p></p>
+            </div>
+          </div>
+          <!-- ENTRY END -->
+          <!-- ENTRY START -->
+          <div class="entry">
+            <div class="entryhead">
+              <div class="icon">
+                <img src="https://i.pinimg.com/474x/40/0d/57/400d572019351850d510caa6a8f66001.jpg" width="80px">
+              </div>
+              <div class="date">
+                <p>
+                  <span class="datecolor">
+                    <b>Date:</b>
+                  </span> 06/29/2025
+                </p>
+                <p>
+                  <span class="datecolor">
+                    <b>Mood:</b>
+                  </span> Relatable
+                </p>
+              </div>
+              <div class="header">
+                <h2>Chapter 5</h2>
+              </div>
+            </div>
+            <div class="text">
+              <p style="margin:0px;">joined a server just to lurk and steal aesthetic ideas. 2 hours later i’m trauma dumping in general chat and being called “so real for that.” discord is a dangerous place. </p>
+              <p></p>
+            </div>
+          </div>
+          <!-- ENTRY END -->
+          <!-- ENTRY START -->
+          <div class="entry">
+            <div class="entryhead">
+              <div class="icon">
+                <img src="https://cdn.prod.website-files.com/62bdc93e9cccfb43e155104c/654f6a608b5c8a812fec25f4_Funny%2520PFP%2520for%2520Tiktok%25201.png" width="80px">
+              </div>
+              <div class="date">
+                <p>
+                  <span class="datecolor">
+                    <b>Date:</b>
+                  </span> 06/23/2025
+                </p>
+                <p>
+                  <span class="datecolor">
+                    <b>Mood:</b>
+                  </span> Branded
+                </p>
+              </div>
+              <div class="header">
+                <h2>Chapter 6</h2>
+              </div>
+            </div>
+            <div class="text">
+              <p style="margin:0px;">i said “brb” two days ago and never came back. when i finally logged in, someone messaged me “you okay?” and i said “yeah just been playing valorant” they replied “i'm not surprised nor mad anymore” i’m not even sure what that means but i think i’ve accidentally built a brand.</p>
+              <p></p>
+            </div>
+          </div>
+          <!-- ENTRY END -->
+        </div>
+      </div>
+    </div>
+    <div id="credit">
+      <a href="discord.com">©a3f4fgf56g7j43g2r</a>
+    </div>
+  </body>
+</html>
