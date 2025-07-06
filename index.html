@@ -1,4 +1,315 @@
+
+
 <!DOCTYPE html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a3f4fgf56g7j43g2r</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background-image: url('https://i.pinimg.com/originals/ee/0b/d5/ee0bd5c89941b6c095614a51f72a3ff7.gif');
+        margin: 0px;
+        color: #613f3f;
+        overflow-x: hidden;
+      }
+
+      /* SNOW EFFECT */
+      .snowflakes {
+        position: fixed;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        overflow: hidden;
+      }
+
+      .snowflake {
+        color: white;
+        font-size: 1.5em;
+        font-family: Arial, sans-serif;
+        text-shadow: 0 0 5px #fff;
+        position: absolute;
+        top: -10%;
+        user-select: none;
+        animation-name: fall;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        opacity: 0.8;
+      }
+
+      .snowflake:nth-child(1) { left: 10%; animation-delay: 0s; }
+      .snowflake:nth-child(2) { left: 25%; animation-delay: 2s; }
+      .snowflake:nth-child(3) { left: 40%; animation-delay: 4s; }
+      .snowflake:nth-child(4) { left: 55%; animation-delay: 1s; }
+      .snowflake:nth-child(5) { left: 70%; animation-delay: 3s; }
+      .snowflake:nth-child(6) { left: 85%; animation-delay: 5s; }
+
+      @keyframes fall {
+        0% {
+          transform: translateY(0) rotate(0deg);
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(100vh) rotate(360deg);
+          opacity: 0;
+        }
+      }
+
+      /* Your existing CSS (unchanged below this) */
+      #topborder {
+        background-image: url('https://i.imgur.com/0vWS1mg.png');
+        background-repeat: repeat-x;
+        height: 73px;
+        width: 100vw;
+        position: fixed;
+        top: 0px;
+        z-index: 3;
+      }
+
+      #bottomborder {
+        background-image: url('https://i.imgur.com/lv5pt9F.png');
+        background-repeat: repeat-x;
+        height: 73px;
+        width: 100vw;
+        position: fixed;
+        bottom: 0px;
+        z-index: 3;
+      }
+
+      #all {
+        background-color: #aaa;
+        width: 800px;
+        margin: 0 auto;
+      }
+
+      #side {
+        width: 175px;
+        margin-top: 135px;
+        float: left;
+        position: fixed;
+      }
+
+      #profile {
+        background-color: #fefefe;
+        border-radius: 10px;
+        width: 145px;
+        margin-bottom: 25px;
+        padding: 15px;
+      }
+
+      #pfp {
+        background-image: url('https://preview.redd.it/ask-me-something-ill-respond-with-a-meme-v0-vaaheetjdkmc1.png?width=235&format=png&auto=webp&s=6944cae1c996701cb5cd9fe8fe66ba9d07c79031');
+        width: 145px;
+        height: 145px;
+        border-radius: 10px;
+        opacity: 0.9;
+      }
+
+      #profiletext {
+        margin: 0px;
+        letter-spacing: 1px;
+        text-align: justify;
+        font-size: 14px;
+        padding: 15px 5px 0px 5px;
+        color: #856d6d;
+      }
+
+      #nav {
+        background-color: #fefefe;
+        width: 175px;
+        border-radius: 10px;
+        position: relative;
+      }
+
+      #navheader {
+        border-bottom: 3px solid #cdb5b5;
+        margin: 0px;
+        line-height: 10px;
+        padding-left: 5px;
+        padding-top: 15px;
+        font-family: 'Sacramento', cursive;
+        color: #FFA1DE;
+      }
+
+      #navbow {
+        background-image: url('https://i.imgur.com/2IzDDAz.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 65px;
+        height: 41px;
+        position: absolute;
+        right: 9px;
+        top: 14px;
+        z-index: 2;
+      }
+
+      ul {
+        margin: 0px;
+        padding: 13px 10px 10px 16px;
+      }
+
+      li {
+        list-style-type: none;
+        margin: -10px;
+        letter-spacing: -1px;
+        font-size: 18px;
+      }
+
+      #main {
+        width: 605px;
+        float: right;
+        position: relative;
+      }
+
+      #title {
+        font-family: 'Sacramento', Cursive;
+        border-bottom: 3px solid #cdb5b5;
+        line-height: 15px;
+        width: 600px;
+        margin: 0px;
+        color: #FFA1DE;
+        background-color: #fefefe;
+        position: absolute;
+        top: 74px;
+        border-radius: 10px 10px 0px 0px;
+        padding-left: 5px;
+        padding-top: 22px;
+      }
+
+      #bow {
+        background-image: url('https://i.imgur.com/GOQMFVP.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 160px;
+        height: 102px;
+        position: absolute;
+        right: 45px;
+        top: 81px;
+        z-index: 2;
+      }
+
+      #content {
+        background-color: #fefefe;
+        position: absolute;
+        top: 114px;
+        width: 575px;
+        padding: 15px 15px 73px 15px;
+      }
+
+      .entry {
+        width: 575px;
+      }
+
+      .entryhead {
+        width: 575px;
+        height: 80px;
+        position: relative;
+        border-bottom: 1px dotted #613f3f;
+        padding-bottom: 5px;
+      }
+
+      .icon {
+        width: 80px;
+        opacity: 0.9;
+      }
+
+      .date {
+        position: absolute;
+        bottom: 0;
+        left: 85px;
+        padding-bottom: 5px;
+      }
+
+      .date p {
+        margin: 0px;
+        letter-spacing: -1px;
+        color: #856d6d;
+      }
+
+      .datecolor {
+        color: #FFA1DE;
+      }
+
+      .header {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+
+      .header h2 {
+        margin: 0px;
+        font-family: 'Sacramento', cursive;
+        line-height: 23px;
+        font-size: 26px;
+        color: #FFA1DE;
+      }
+
+      .text {
+        text-align: justify;
+        margin-top: 5px;
+        letter-spacing: 1px;
+        color: #856d6d;
+      }
+
+      a {
+        text-decoration: none;
+        color: #FFA1DE;
+        font-family: 'Sacramento', Cursive;
+      }
+
+      a:visited {
+        color: #FFA1DE;
+      }
+
+      a:hover {
+        font-style: italic;
+      }
+
+      a:active {
+        font-style: italic;
+        font-weight: bold;
+      }
+
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background-color: #578EA3;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background-color: #cdb5b5;
+      }
+
+      #credit {
+        font-size: 12px;
+        position: fixed;
+        bottom: 70px;
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Snowflakes -->
+    <div class="snowflakes" aria-hidden="true">
+      <div class="snowflake">❅</div>
+      <div class="snowflake">❆</div>
+      <div class="snowflake">❅</div>
+      <div class="snowflake">❆</div>
+      <div class="snowflake">❅</div>
+      <div class="snowflake">❆</div>
+    </div>
+
 <html>
   <head>
     <meta charset="UTF-8">
